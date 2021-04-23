@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href='{% static "css/main.css" %}' />
+        <title>Spring Bee</title>
+    </head>
+    <body>
+        <h1 class="title">Speller's of the World Unite Together</h1>
+        <p>Welcome, <span class="title">{{name }}</span>, you <span style="color: darkorange">{{ quality }}</span> like a  <span style="color: deeppink">{{ qualifier }}</span> <span style="color: crimson">{{ animal }}</span>!</p>
+    </body>
+</html>
