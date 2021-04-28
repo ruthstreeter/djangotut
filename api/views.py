@@ -25,3 +25,4 @@ def pikas(request):
 
 def sy(request):
     return HttpResponse("<em>World to duck again...</em>")
+  
