@@ -21,7 +21,8 @@ from django.conf.urls import include
 from api import views
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'^api/', include('api.urls')),
+    url(r'^$',views.index,name='index'),
     url(r'^admin/', admin.site.urls),
+    url(r'^users/',include('api.urls')),
+    
 ]
