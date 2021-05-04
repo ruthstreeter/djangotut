@@ -10,7 +10,7 @@
         <img src='{% static "images/bee.jpg" %}' alt="">
         <h1 class="title">Speller's of the World Unite</h1>
         {% for person in people %}
-            <p>Welcome {{ person.name }} (otherwise known as {{ person.nickname }}) !</p>
+            <p>Welcome {{ person.first_name }} {{ person.last_name }} (who has the funky email {{ person.email }} ) !</p>
         {% endfor %}
     </body>
 </html>
