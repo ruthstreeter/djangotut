@@ -4,7 +4,7 @@ from api.models import User
 
 def index(request):
     users = User.objects.all()
-    return render(request,'api/index.html', context={ "people": users })
+    return render(request,'api/index.html', context={ "": users })
 
 def users(request):
 
